@@ -5,27 +5,42 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 
 article{
     background-color: #F3F3F3;
-    display: inline-block;
     width: 25%;
     text-align: center;
     justify-content: center;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 article button {
     background-color: #00669F;
     border: none;
     color: #F3F3F3;
-    padding: 15px 37px;
+    padding: 15px 0px;
     margin-bottom: 19px;
     margin-top: 37px;
     font-size: 15px;
+    width: 129px;
+    align-self: center;
+}
+
+
+.like-icon{
+    z-index: 1000;
+    color: red;
+    display: flex;
+    margin-top: 15px;
+    margin-left: 21px;
+    width: 30px;
+    height: 27px;
 }
 
 article img{
@@ -51,6 +66,20 @@ article p{
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px 10px 0 0;
+}
+
+.article-header-2{
+    background-image: url('../img/harley-background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 0 0;
+}
+
+section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 nav{
@@ -86,6 +115,8 @@ footer{
 
 .top-bar{
     background-color: #1CD1B0;
+    display: flex;
+    justify-content: flex-start;
     padding-left: 16px;
 }
 
