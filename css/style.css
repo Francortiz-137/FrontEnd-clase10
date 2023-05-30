@@ -19,6 +19,9 @@ article{
     flex-direction: column;
     flex-wrap: wrap;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 300px;
+    margin: 15px 15px 0px;
+    position: relative;
 }
 
 article button {
@@ -46,8 +49,9 @@ article button {
 
 article img{
     border-radius: 100%;
-    position: relative;
-    top: 50px;
+    position: absolute;
+    top: 135px;
+    left: 95px;
 
 }
 article h3{
@@ -67,6 +71,7 @@ article p{
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px 10px 0 0;
+    height: 200px;
 }
 
 .article-header-2{
@@ -75,11 +80,17 @@ article p{
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px 10px 0 0;
+    height: 200px;
+    width: 300px;
+}
+
+.article-body{
+    margin: 0 50px;
 }
 
 section{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -87,6 +98,9 @@ nav{
     background-color: #00669F;
     height: 101px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
 }
 
 nav h1{
